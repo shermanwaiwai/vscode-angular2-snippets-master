@@ -1,0 +1,123 @@
+{
+  "devextreme button": {
+    "prefix": "dev-button",
+    "description": "devextreme button ",
+    "body": [
+      "//button click event",
+      "helloWorld() {",
+      "alert('Hello world');}"
+    ]
+  },
+  "devextreme editor": {
+    "prefix": "dev-editor",
+    "description": "devextreme editor",
+    "body": [
+      "demoItems: string[];",
+      "//assign value to demoItems , eg  demoItems = ['item1','item2','item3'];"
+    ]
+  },
+  "devextreme form valid": {
+    "prefix": "dev-form-valid",
+    "description": "devextreme form",
+    "body": [
+      "//init formdata eg:",
+      "formData = { email: '', password: '' };",
+      "//validate with parameters",
+      "validate(params) {",
+      " let result = params.validationGroup.validate();",
+      "if (result.isValid) {",
+      "   alert('Form data is valid');",
+      "} else {",
+      "   alert('Form data is invalid');",
+      "}",
+      "}"
+    ]
+  },
+  "devextreme form": {
+    "prefix": "dev-form",
+    "description": "devextreme form example",
+    "body": [
+      "//init formdata eg:",
+      "formData = { email: '', password: '' };"
+    ]
+  },
+  "devextreme list": {
+    "prefix": "dev-list",
+    "description": "devextreme list example",
+    "body": [
+      "//declear products",
+      "products = [",
+      "{",
+      "key: 'Notebook',",
+      "items: [ 'Supernote JG867', 'Ultranote VP334', 'Meganote LS952' ]",
+      "}, {",
+      "key: 'Netbook',",
+      "items: [ 'Supernet HY834', 'Ultranet KN354', 'Meganet ME830' ]",
+      "}",
+      "];",
+      "//action for button",
+      "buy(model) {",
+      "alert(model + ' has been added to order');",
+      "}"
+    ]
+  },
+  "devextreme popover": {
+    "prefix": "dev-popover",
+    "description": "devextreme popover example",
+    "body": [
+      "showPopover() {",
+      "this.popover.instance.show();",
+      "}"
+    ]
+  },
+  "devextreme tab": {
+    "prefix": "dev-tab",
+    "description": "devextreme tabs example",
+    "body": [
+      "//declare variable for tabs",
+      "tabs = [{",
+      "id: 0,",
+      "text: 'user',",
+      "icon: 'user',",
+      "content: 'User tab content'",
+      "}, {",
+      "id: 1,",
+      "text: 'comment',",
+      "icon: 'comment',",
+      "content: 'Comment tab content'",
+      "}, {",
+      "id: 2,",
+      "text: 'find',",
+      "icon: 'find',",
+      "content: 'Find tab content'",
+      " }",
+      "];",
+      "//select index change",
+      "selectTab(e) {",
+      "this.tabContent = this.tabs[e.itemIndex].content;",
+      "}"
+    ]
+  },
+"devextreme chart": {
+    "prefix": "dev-chart",
+    "description": "devextreme chart example",
+    "body": [
+      "//declare variable for chart",
+      "//just the example , you may declear your object dataSource",
+      "oranges: Orange[];",
+      "//you may get your orange data from service",
+      "//eg this.oranges = this.orangeService.getOranges();"
+    ]
+  },
+  "devextreme datagrid": {
+    "prefix": "dev-datagrid",
+    "description": "devextreme datagrid example",
+    "body": [
+      "//declare variable for datagrid",
+      "//just the example , you may declear your object dataSource",
+      "customers: Customer[];",
+      "//you may get your orange data from service",
+      "//eg this.customers = this.customerService.getCustomers();"
+    ]
+  }
+}

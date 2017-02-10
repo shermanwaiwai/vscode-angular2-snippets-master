@@ -1,0 +1,369 @@
+{
+  "devextreme button editor": {
+    "prefix": "dev-button",
+    "body": [
+      "<dx-button text='Simple button' (onClick)='helloWorld()'></dx-button><br/>"
+    ],
+    "description": "devextreme button example"
+  },
+  "devextreme checkbox editor": {
+    "prefix": "dev-checkbox",
+    "body": [
+      "<dx-check-box text='Lonely checkbox' [(value)]='boolValue'></dx-check-box>"
+    ],
+    "description": "devextreme checkbox example"
+  },
+  "devextreme switch editor": {
+    "prefix": "dev-switch",
+    "body": [
+      "<dx-switch [(value)]='boolValue'></dx-switch>"
+    ],
+    "description": "devextreme switch example"
+  },
+  "devextreme textbox editor": {
+    "prefix": "dev-textbox",
+    "body": [
+      "<dx-text-box placeholder='TextBox' [(value)]='text' valueChangeEvent='keyup'>"
+    ],
+    "description": "devextreme textbox example"
+  },
+  "devextreme textArea editor": {
+    "prefix": "dev-textarea",
+    "body": [
+      "<dx-text-area placeholder='TextArea' [(value)]='text' valueChangeEvent='keyup'></dx-text-area>"
+    ],
+    "description": "devextreme textArea example"
+  },
+  "devextreme numberBox editor": {
+    "prefix": "dev-numberbox",
+    "body": [
+      "<dx-number-box placeholder='NumberBox' [showSpinButtons]='true' [(value)]='numberValue' [min]='0' [max]='100' ></dx-number-box>"
+    ],
+    "description": "devextreme numberBox example"
+  },
+  "devextreme progress bar editor": {
+    "prefix": "dev-progressbar",
+    "body": [
+      "<dx-progress-bar [(value)]='numberValue'></dx-progress-bar>"
+    ],
+    "description": "devextreme progressbar example"
+  },
+  "devextreme slider editor": {
+    "prefix": "dev-slider",
+    "body": [
+      "<dx-slider [(value)]='numberValue'></dx-slider>"
+    ],
+    "description": "devextreme slider example"
+  },
+  "devextreme range slider editor": {
+    "prefix": "dev-range-slider",
+    "body": [
+      "<dx-range-slider [start]='15' [end]='75'></dx-range-slider>"
+    ],
+    "description": "devextreme range slider example"
+  },
+  "devextreme load indicator editor": {
+    "prefix": "dev-load-indicator",
+    "body": [
+      "<dx-load-indicator [visible]='true'></dx-load-indicator>"
+    ],
+    "description": "devextreme load indicator example"
+  },
+  "devextreme autoComplete editor": {
+    "prefix": "dev-auto-complete",
+    "body": [
+      "<dx-autocomplete placeholder='Autocomplete' [items]='demoItems'></dx-autocomplete>"
+    ],
+    "description": "devextreme auto complete example"
+  },
+  "devextreme selectbox editor": {
+    "prefix": "dev-selectbox",
+    "body": [
+      "<dx-select-box placeholder='SelectBox' [items]='demoItems'></dx-select-box>"
+    ],
+    "description": "devextreme selectbox example"
+  },
+  "devextreme tagbox editor": {
+    "prefix": "dev-tagbox",
+    "body": [
+      "<dx-tag-box placeholder='TagBox' [items]='demoItems'></dx-tag-box>"
+    ],
+    "description": "devextreme tagbox example"
+  },
+  "devextreme radio group editor": {
+    "prefix": "dev-radio-group",
+    "body": [
+      "<dx-radio-group [items]='demoItems'></dx-radio-group>"
+    ],
+    "description": "devextreme radio group example"
+  },
+  "devextreme color box editor": {
+    "prefix": "dev-color-box",
+    "body": [
+      "<dx-color-box placeholder='ColorBox'></dx-color-box>"
+    ],
+    "description": "devextreme color box example"
+  },
+  "devextreme date box editor": {
+    "prefix": "dev-date-box",
+    "body": [
+      "<dx-date-box [(value)]='currentDate'></dx-date-box>"
+    ],
+    "description": "devextreme date box example"
+  },
+  "devextreme calendar editor": {
+    "prefix": "dev-calendar",
+    "body": [
+      "<dx-calendar [(value)]='currentDate'></dx-calendar>"
+    ],
+    "description": "devextreme calendar example"
+  },
+  "devextreme with ng2-form validation feature": {
+    "prefix": "dev-form-validation",
+    "body": [
+      "<h2>DevExtreme validation features</h2>",
+      "<dx-validation-group>",
+      "<div class='form-group'>",
+      "<label>Email</label>",
+      "<dx-text-box [(value)]='formData.email'>",
+      "<dx-validator>",
+      "<dxi-validation-rule type='required' message='Email is required.'></dxi-validation-rule>",
+      "<dxi-validation-rule type='email' message='Email is invalid.'></dxi-validation-rule>",
+      "</dx-validator>",
+      "</dx-text-box>",
+      "<label>Password</label>",
+      "<dx-text-box [(value)]='formData.password' mode='password'>",
+      "<dx-validator>",
+      "<dxi-validation-rule type='required' message='Password is required.'></dxi-validation-rule>",
+      "</dx-validator>",
+      "</dx-text-box>",
+      "<dx-validation-summary></dx-validation-summary>",
+      "</div>",
+      "<dx-button (onClick)='validate($event)' text='Submit'></dx-button>",
+      "</dx-validation-group>"
+    ],
+    "description": "devextreme form validation example"
+  },
+  "devextreme form": {
+    "prefix": "dev-form",
+    "body": [
+      "<h2>dxForm</h2>",
+      "<dx-form #dxForm",
+      "[formData]='formData'",
+      "labelLocation='top'>",
+      "<dxi-item",
+      "dataField='email'",
+      "editorType='dxTextBox'>",
+      "<dxi-validation-rule type='required' message='Email is required.'></dxi-validation-rule>",
+      "<dxi-validation-rule type='email' message='Email is invalid.'></dxi-validation-rule>",
+      "</dxi-item>",
+      "<dxi-item",
+      "dataField='password'",
+      "editorType='dxTextBox'",
+      "[editorOptions]='{ mode: 'password' }'>",
+      "<dxi-validation-rule type='required' message='Password is required.'></dxi-validation-rule>",
+      "</dxi-item>",
+      "</dx-form>",
+      "<dx-button (onClick)='dxForm.instance.validate()' text='Submit'></dx-button>"
+    ],
+    "description": "devextreme form example"
+  },
+  "devextreme list": {
+    "prefix": "dev-list",
+    "body": [
+      "<h3>dxList</h3>",
+      "<dx-list [grouped]='true' [items]='products'>",
+      "<div *dxTemplate='let t of 'item''>",
+      "{{t}}",
+      "<dx-button class='float-right' text='Buy' (onClick)='buy(t)'></dx-button>",
+      "</div>",
+      "<div *dxTemplate='let g of 'group''>",
+      "Group {{g.key}}",
+      "</div>",
+      "</dx-list>"
+    ],
+    "description": "devextreme list example"
+  },
+  "devextreme popup": {
+    "prefix": "dev-popup",
+    "body": [
+      "<h2>dxPopup</h2>",
+      "<dx-popup showTitle='true' title='Demo of dxPopup' [(visible)]='popupVisible'>",
+      "<div *dxTemplate='let data of 'content''>",
+      "<div>Hello from dxPopup</div>",
+      "</div>",
+      "</dx-popup>",
+      "<dx-button text='Show Popup via model' (onClick)='popupVisible = !popupVisible'></dx-button>"
+    ],
+    "description": "devextreme popover example"
+  },
+  "devextreme popupover": {
+    "prefix": "dev-popover",
+    "body": [
+      "<h2>dxPopover</h2>",
+      "<dx-popover",
+      "target='#popoverButton'",
+      "[width]='300'",
+      "position='top'",
+      "showTitle='true'",
+      "title='Demo of dxPopover'>",
+      "<div *dxTemplate='let data of 'content''>",
+      "<p>Hello from dxPopover</p>",
+      "</div>",
+      "</dx-popover>",
+      "<dx-button",
+      "id='popoverButton'",
+      "text='Show Popover via method'",
+      "(onClick)='showPopover()'",
+      "></dx-button><br/>"
+    ],
+    "description": "devextreme popover example"
+  },
+  "devextreme scroll-view": {
+    "prefix": "dev-scroll-view",
+    "body": [
+      "<h2>dxScrollView</h2>",
+      "<dx-scroll-view class='scroll-view-height'>",
+      "<div>",
+      "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, eveniet tempore, perspiciatis totam qui est minima dicta beatae dolores, omnis enim ut incidunt. Ut reprehenderit, tempore iusto deserunt doloremque fugit.</p>",
+      "</div>",
+      "</dx-scroll-view>"
+    ],
+    "description": "devextreme scroll-view example"
+  },
+  "devextreme tabs": {
+    "prefix": "dev-tabs",
+    "body": [
+      "<h2>DxTabs</h2>",
+      "<dx-tabs",
+      "id='tabs'",
+      "[dataSource]='tabs'",
+      "[selectedIndex]='0'",
+      "(onItemClick)='selectTab($event)'>",
+      "</dx-tabs>",
+      "<div class='tab-content dx-fieldset'>",
+      "<div class='dx-field'>",
+      "<div class='dx-field-label'>Selected content:</div>",
+      "<div class='dx-field-value-static left-aligned'>",
+      "{{tabContent}}",
+      "</div>",
+      "</div>",
+      "</div>"
+    ],
+    "description": "devextreme tabs example"
+  },
+  "devextreme tabs panel with datasource": {
+    "prefix": "dev-tabs-panel",
+    "body": [
+      "<h2>DxTabPanel</h2>",
+      "<h3>With data source</h3>",
+      "<dx-tab-panel",
+      "[height]='260'",
+      "[dataSource]='tabPanelItems'",
+      "[selectedIndex]='0'",
+      "[loop]='true'",
+      "[animationEnabled]='true'",
+      "[swipeEnabled]='true'>",
+      "<div *dxTemplate='let company of 'title''>",
+      "<span>{{company.CompanyName}}</span>",
+      "</div>",
+      "<div *dxTemplate='let company of 'item''>",
+      "<div class='tabpanel-item'>",
+      "<div>",
+      "<p>",
+      "<b>{{company.City}}</b>",
+      "(<span>{{company.State}}</span>)",
+      "</p>",
+      "<p>",
+      "<span>{{company.Zipcode}}</span>",
+      "<span>{{company.Address}}</span>",
+      "</p>",
+      "</div>",
+      "<div>",
+      "<p>",
+      "Phone: <b>{{company.Phone}}</b>",
+      "</p>",
+      "<p>",
+      "Fax: <b>{{company.Fax}}</b>",
+      "</p>",
+      "<p>",
+      "Website:",
+      "<a href='{{company.Website}}'",
+      "target='_blank'>",
+      "{{company.Website}}",
+      "</a>",
+      "</p>",
+      "</div>",
+      "</div>",
+      "</div>",
+      "</dx-tab-panel>"
+    ],
+    "description": "devextreme tabs panel example"
+  },
+  "devextreme tabs panel with static value": {
+    "prefix": "dev-tabs-panel-static",
+    "body": [
+      "<h3>With static items</h3>",
+      "<dx-tab-panel [height]='260' [selectedIndex]='0'>",
+      "<dxi-item title='Home' icon='home' [template]=''customTemplate''>",
+      "</dxi-item>",
+      "<dxi-item class='tabpanel-item' title='About' icon='info'>",
+      "<h3>About</h3>",
+      "<p>Content of the About tab</p>",
+      "</dxi-item>",
+      "<div *dxTemplate='let item of 'customTemplate'' class='tabpanel-item'>",
+      "<h3>Home</h3>",
+      "<p>Content of the Home tab</p>",
+      "</div>",
+      "</dx-tab-panel>"
+    ],
+    "description": "devextreme tabs panel with static value example"
+  },
+  "devextreme charts": {
+    "prefix": "dev-charts",
+    "body": [
+      "<h2>dxChart</h2>",
+      "<dx-select-box #serieType",
+      "[items]='chartSeriesTypes'",
+      "[value]='chartSeriesTypes[0]'",
+      "[width]='200'></dx-select-box>",
+      "<dx-chart",
+      "class='full-width'",
+      "[dataSource]='oranges'>",
+      "<dxi-series",
+      "argumentField='day'",
+      "valueField='oranges'",
+      "name='My oranges'></dxi-series>",
+      "<dxo-common-series-settings",
+      "color='#ffa500'",
+      "[type]='serieType.value'></dxo-common-series-settings>",
+      "<dxo-size",
+      "[height]='300'></dxo-size>",
+      "</dx-chart>"
+    ],
+    "description": "devextreme charts"
+  },
+  "devextreme datagrid": {
+    "prefix": "dev-datagrid",
+    "body": [
+      "<h2>dxDataGrid</h2>",
+      "<dx-data-grid [dataSource]='customers'>",
+      "<dxo-paging [pageSize]='10'></dxo-paging>",
+      "<dxo-pager",
+      "[showPageSizeSelector]='true'",
+      "[allowedPageSizes]='[5, 10, 20]'",
+      "[showInfo]='true'>",
+      "</dxo-pager>",
+      "<dxi-column dataField='CompanyName'></dxi-column>",
+      "<dxi-column dataField='City'></dxi-column>",
+      "<dxi-column dataField='State'></dxi-column>",
+      "<dxi-column dataField='Fax'></dxi-column>",
+      "<dxi-column dataField='Phone' cellTemplate='phoneCellTemplate'></dxi-column>",
+      "<div *dxTemplate='let cellData of 'phoneCellTemplate''>",
+      "<dx-button (onClick)='callNumber(cellData.value)' [text]='cellData.text'></dx-button>",
+      "</div>",
+      "</dx-data-grid>"
+    ],
+    "description": "devextreme datagrid"
+  }
+}
