@@ -9,29 +9,49 @@ This extension for Visual Studio Code adds snippets for Angular 2 for TypeScript
 ## Usage
 Type part of a snippet, press `enter`, and the snippet unfolds.
 
-### TypeScript Snippets
+### Devextrme - TypeScript Snippets
 ```typescript
-ng2-bootstrap       // Angular 2 bootstrapping, for main.ts
-ng2-component       // Angular 2 component
-ng2-component-root  // Angular 2 root app component
-ng2-http-get        // Angular 2 http.get with Rx Observable
-ng2-module          // Angular 2 module
-ng2-module-root     // Angular 2 root app module
-ng2-pipe            // Angular 2 pipe
-ng2-routing         // Angular 2 routing
-ng2-service         // Angular 2 service
-ng2-subscribe       // Angular 2 Rx Observable subscription
+dev-button
+dev-editor
+dev-form-valid
+dev-form
+dev-list
+dev-popover
+dev-tab
+dev-chart
+dev-datagrid
 ```
 
-###HTML Snippets
+### Devextreme - HTML Snippets
 ```html
-ng2-ngClass
-ng2-ngFor
-ng2-ngIf
-ng2-ngModel
-ng2-routerLink
-ng2-ngStyle
-ng2-ngSwitch
+dev-button
+dev-checkbox
+dev-switch
+dev-textbox
+dev-textarea
+dev-numberbox
+dev-progressbar
+dev-slider
+dev-range-slider
+dev-load-indicator
+dev-auto-complete
+dev-selectbox
+dev-tagbox
+dev-radio-group
+dev-color-box
+dev-date-box
+dev-calendar
+dev-form-validation
+dev-form
+dev-list
+dev-popup
+dev-popover
+dev-scroll-view
+dev-tab
+dev-tabs-panel
+dev-tabs-panel-static
+dev-charts
+dev-datagrid
 ```
 
 Alternatively, press `Ctrl`+`Space` (Windows, Linux) or `Cmd`+`Space` (OSX) to activate snippets from within the editor.
